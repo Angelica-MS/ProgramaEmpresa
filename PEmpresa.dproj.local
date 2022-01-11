@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/01/11 11:37:43.000.679,=D:\Empresa\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:38:21.000.404,=D:\Empresa\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:40:14.000.049,D:\Empresa\Unit1.pas=D:\Empresa\UPesquisaFuncionario.pas</Transaction>
+    <Transaction>2022/01/11 11:40:14.000.049,D:\Empresa\Unit1.dfm=D:\Empresa\UPesquisaFuncionario.dfm</Transaction>
+    <Transaction>2022/01/11 11:47:16.000.613,=D:\Empresa\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 11:49:25.000.440,D:\Empresa\Unit1.pas=D:\Empresa\UPrincipal.pas</Transaction>
+    <Transaction>2022/01/11 11:49:25.000.440,D:\Empresa\Unit1.dfm=D:\Empresa\UPrincipal.dfm</Transaction>
+    <Transaction>2022/01/11 11:51:53.000.064,D:\Empresa\UPesquisaCliente.dfm=D:\Empresa\UPesquisaEmpresa.dfm</Transaction>
+    <Transaction>2022/01/11 11:51:53.000.064,D:\Empresa\UPesquisaCliente.pas=D:\Empresa\UPesquisaEmpresa.pas</Transaction>
+    <Transaction>2022/01/11 11:52:54.000.919,D:\Empresa\UCadCliente.pas=D:\Empresa\UCadEmpresa.pas</Transaction>
+    <Transaction>2022/01/11 11:52:54.000.919,D:\Empresa\UCadCliente.dfm=D:\Empresa\UCadEmpresa.dfm</Transaction>
+    <Transaction>2022/01/11 12:50:21.000.318,=D:\Empresa\Unit1.pas</Transaction>
+    <Transaction>2022/01/11 12:50:50.000.327,D:\Empresa\Unit1.pas=D:\Empresa\uPesquisaEndereco.pas</Transaction>
+    <Transaction>2022/01/11 12:50:50.000.327,D:\Empresa\Unit1.dfm=D:\Empresa\uPesquisaEndereco.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,26 @@
+unit Umodule;
+
+interface
+
+uses
+  SysUtils, Classes, DBXpress, DB, SqlExpr, FMTBcd;
+
+type
+  Tmodule = class(TDataModule)
+    sqlInsere: TSQLQuery;
+    dsInsere: TDataSource;
+    conexao: TSQLConnection;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  module: Tmodule;
+
+implementation
+
+{$R *.dfm}
+
+end.

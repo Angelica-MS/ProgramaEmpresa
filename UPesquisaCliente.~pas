@@ -1,0 +1,62 @@
+unit UPesquisaCliente;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Ucadastro, Grids, DBGrids, StdCtrls, Buttons, ExtCtrls, Mask,
+  UPesquisa;
+
+type
+  TFPesquisaCliente = class(TFPesquisa)
+    Label11: TLabel;
+    procedure btInsereClick(Sender: TObject);
+    procedure btAtualizaClick(Sender: TObject);
+    procedure empresaChange(Sender: TObject);
+  private
+ 
+      { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FPesquisaCliente: TFPesquisaCliente;
+
+implementation
+
+uses Umodule, UCadCliente;
+
+{$R *.dfm}
+
+procedure TFPesquisaCliente.btInsereClick(Sender: TObject);
+begin
+  inherited;
+FCadCliente.show;
+FCadCliente.cod.SetFocus;
+end;
+
+procedure TFPesquisaCliente.btAtualizaClick(Sender: TObject);
+begin
+  inherited;
+FCadCliente.show;
+FCadCliente.cod.SetFocus;
+end;
+
+procedure TFPesquisaCliente.empresaChange(Sender: TObject);
+begin
+  inherited;
+  with module do
+  begin
+    sqlInsere.Close;
+    sqlInsere.SQL.Clear;
+    sqlInsere.SQL.Add('SELECT * FROM CADEMPRESA WHERE NmEMPRESA LIKE :empresa');
+    sqlInsere.ParamByName('empresa').Value:=empresa.Text+'%';
+    sqlInsere.SQL.Add('ORDER BY NMEMPRESA');
+    sqlInsere.ExecSQL(true);
+    DBGrid1.DataSource:=dsInsere;
+   end;
+
+end;
+
+end.

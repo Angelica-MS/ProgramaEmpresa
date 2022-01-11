@@ -1,0 +1,21 @@
+program PEmpresa;
+
+uses
+  Forms,
+  UPesquisa in 'UPesquisa.pas' {FPesquisa},
+  Umodule in 'Umodule.pas' {module: TDataModule},
+  UPesquisaCliente in 'UPesquisaCliente.pas' {FPesquisaCliente},
+  UCad in 'UCad.pas' {FCad},
+  UCadCliente in 'UCadCliente.pas' {FCadCliente};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFPesquisaCliente, FPesquisaCliente);
+  Application.CreateForm(TFPesquisa, FPesquisa);
+  Application.CreateForm(Tmodule, module);
+  Application.CreateForm(TFCad, FCad);
+  Application.CreateForm(TFCadCliente, FCadCliente);
+  Application.Run;
+end.

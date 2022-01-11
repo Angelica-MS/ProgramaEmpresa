@@ -1,0 +1,13 @@
+Desenvolvedor: Angélica Menegassi da Silveira
+
+Ferramentas utilizadas:
+
+Delphi Rad Studio 11
+Firebird V2.5
+Componentes de Conexão com BD: Foram usados os componentes NATIVOS do Delphi 11 - FireDac (FDConnection,FDQuery...) pois o DbExpress não funcionou, dando erro de Unit não encontrada.
+
+Banco de dados dados.fdb:
+
+* foi enviado junto aos arquivos pois está atualizado com os registros inseridos
+* o campo OBS foi alterado para varchar
+* o campo NMEmpresa foi alterado charset (ISO8859_1) e collate (PT_BR) para que a consulta funcionasse corretamente

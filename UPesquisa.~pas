@@ -1,0 +1,47 @@
+unit UPesquisa;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, DBGrids, StdCtrls, Buttons, ExtCtrls, Data.DB;
+
+type
+  TFPesquisa = class(TForm)
+    Panel1: TPanel;
+    btInsere: TSpeedButton;
+    btAtualiza: TSpeedButton;
+    PanelDados: TPanel;
+    btExlcui: TSpeedButton;
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    empresa: TEdit;
+    procedure btsalvaClick(Sender: TObject);
+  private
+      { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FPesquisa: TFPesquisa;
+
+implementation
+
+uses Umodule, UCadCliente;
+
+{$R *.dfm}
+
+{ TFCadastro }
+
+
+
+
+
+procedure TFPesquisa.btsalvaClick(Sender: TObject);
+begin
+PanelDados.Enabled:=false;
+end;
+
+end.
